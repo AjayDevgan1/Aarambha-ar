@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Aarambha College AR</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: sans-serif;
+      background: #f0f0f0;
+      text-align: center;
+    }
+    header {
+      background: #001F3F;
+      color: gold;
+      padding: 1rem;
+    }
+    img.logo {
+      width: 120px;
+      margin-top: 1rem;
+    }
+    .container {
+      padding: 1rem;
+    }
+    model-viewer {
+      width: 100%;
+      height: 400px;
+    }
+    .buttons a {
+      display: inline-block;
+      margin: 1rem;
+      padding: 0.75rem 1.5rem;
+      background: #001F3F;
+      color: gold;
+      text-decoration: none;
+      border-radius: 8px;
+    }
+  </style>
+  <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+</head>
+<body>
+  <header>
+    <h1>Aarambha College</h1>
+    <p>BHM & BIM Programs | TU Affiliated</p>
+  </header>
+
+  <div class="container">
+    <img src="logo.png" alt="Aarambha Logo" class="logo" />
+
+    <!-- 3D Model Viewer -->
+    <model-viewer src="character.usdz" alt="3D Character" auto-rotate camera-controls ar ar-modes="scene-viewer quick-look webxr">
+      <p>Your browser doesn’t support AR</p>
+    </model-viewer>
+
+    <!-- Contact and Website Buttons -->
+    <div class="buttons">
+      <a href="tel:+9779855033664">📞 Call College</a>
+      <a href="https://aarambhacollege.edu.np/" target="_blank">🌐 Visit Website</a>
+    </div>
+  </div>
+</body>
+</html>
